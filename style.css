@@ -39,6 +39,10 @@ html::-webkit-scrollbar-thumb {
 body {
 	background: var(--bg);
 }
+
+section {
+    padding: 2rem 7%;
+}
 .btn{
     margin-top: 1rem;
     display: inline-block;
@@ -118,6 +122,9 @@ body {
 	transform: scaleY(0);
 	transform-origin: top;
 }
+.header .search-form.active{
+	transform: scaleY(1);  
+}
 .header .search-form input {
 	height: 100%;
 	width: 100%;
@@ -151,6 +158,10 @@ body {
 	width: 35rem;
 	background: #fff;
 	padding: 0 1.5rem;
+}
+
+.header .cart-items-container.active{
+    right: 0;
 }
 
 .header .cart-items-container .cart-item{
@@ -196,6 +207,46 @@ body {
 }
 /*# ---------------------------------------- end of cart items ---------------------------------------- */
 
+/*+ =================================================================================================== */
+/*+                                             HOME SECTION                                            */
+/*+ =================================================================================================== */
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: url(./assets/img/cofee-bck.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.home .content{
+        max-width: 60rem;
+        text-align: right;
+
+}
+.home .content h3{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 3px 2px 10px #DDA63E;
+}
+.home .content p{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #fff;
+}
+
+/*+ --------------------------------------- end of home section --------------------------------------- */
+
+
+
+
+
 
 
 
@@ -209,12 +260,15 @@ body {
     html{
         font-size: 55%;
     }
+    section {
+        padding: 2rem ;
+    }
     .header{
         padding: 1.5rem 2rem;
     }
 }
 
-@media (max-width:991px){
+@media (max-width:768px){
     #menu-btn {
         display: inline-block;
     }
@@ -226,12 +280,41 @@ body {
         width: 30rem;
         height: calc(100vh - 9.5rem);
     }
+
+    .header .navbar.active{
+        right: 0;
+    }
     .header .navbar a{
         color: var(--black);
         display: block;
         margin: 1.5rem;
         padding: .5rem;
         font-size: 2rem;
+    }
+    .header .search-form{
+        width: 90%;
+        right: 2rem;
+    }
+    .home{
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+    .home .content{
+        text-align: center;
+    }
+    .home .content h3{
+        font-size: 4.5rem;
+        text-shadow: 3px 2px 10px #0B0100;
+    }
+    .home .content p{
+        font-size: 1.5rem;
+    }
+}
 
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
     }
 }

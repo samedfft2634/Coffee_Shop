@@ -1,47 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee Shop</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- font awesome cdn  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Coffee Shop</title>
+		<link rel="stylesheet" href="style.css" />
+		<!-- font awesome cdn  -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+			integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+	</head>
+	<body>
+		<!-- header section  -->
 
+		<header class="header">
+            <!--* --------------------------------------------- logo --------------------------------------------- -->
+			<a href="#" class="logo">
+				<img src="./assets/img/163.jpg"  />
+			</a>
+            <!--\ ================================================================================================ -->
+            <!--\                                              NAVBAR                                              -->
+            <!--\ ================================================================================================ -->
+			<nav class="navbar">
+				<a href="#home">home</a>
+				<a href="#about">about</a>
+				<a href="#menu">menu</a>
+				<a href="#products">products</a>
+				<a href="#review">review</a>
+				<a href="#contact">contact</a>
+				<a href="#blogs">blogs</a>
+			</nav>
+            <!--\ ------------------------------------------- nav-end -------------------------------------------- -->
+            <!--/ ================================================================================================ -->
+            <!--/                                              ICONS                                               -->
+            <!--/ ================================================================================================ -->
+			<div class="icons">
+				<div class="fas fa-search" id="search-btn"></div>
+				<div class="fas fa-shopping-cart" id="cart-btn"></div>
+				<div class="fas fa-bars" id="menu-btn"></div>
+			</div>
+            <!--/ ------------------------------------------- icon end ------------------------------------------- -->
+            <!--? ================================================================================================ -->
+            <!--?                                           SEARCH FORM                                            -->
+            <!--? ================================================================================================ -->
+            <div class="search-form">
+                <input type="search" id="search-box" placeholder="search here...">
+                <label for="search-box" class="fas fa-search"></label>
+            </div>
+            <!--? ------------------------------------------ search end ------------------------------------------ -->
+            <!--# ================================================================================================ -->
+            <!--#                                            CART ITEMS                                            -->
+            <!--# ================================================================================================ -->
+            <div class="cart-items-container">
+                <div class="cart-item">
+                    <span class="fas fa-times"></span>
+                    <img src="./assets/img/coffe1.jpg" alt="">
+                    <div class="content">
+                        <h3>cart item 01</h3>
+                        <div class="price">$15.99</div>
+                    </div>
+                </div>
+            </div>
+            <!--# ---------------------------------------- cart items end ---------------------------------------- -->
 
-</head>
-<body>
-    <!-- header section  -->
+		</header>
+		<!-- end of header section  -->
 
-    <header class="header"></header>
-    <!-- end of header section  -->
-    <a href="#" class="logo">
-        <img src="./assets/img/163.jpg" alt="">
-    </a>
-
-    <div class="navbar">
-        <a href="#home">home</a>
-        <a href="#about">about</a>
-        <a href="#menu">menu</a>
-        <a href="#products">products</a>
-        <a href="#review">review</a>
-        <a href="#contact">contact</a>
-        <a href="#blogs">blogs</a>
-    </div>
-
-    <div class="icons">
-        <div class="fas fa-search" id="search-btn"></div>
-        <div class="fas fa-shopping-cart" id="cart-btn"></div>
-        <div class="fas fa-bars" id="menu-btn"></div>
-    </div>
-
-
-
-
-
-    <!-- js file -->
-    <script src="script.js
+		<!-- js file -->
+		<script src="script.js
     "></script>
-    <!-- end of js file -->
-</body>
+		<!-- end of js file -->
+	</body>
 </html>
